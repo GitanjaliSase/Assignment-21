@@ -3,6 +3,12 @@
 <head>
     <title>Calculator</title>
     <style>
+        @font-face {
+    font-family: 'DS-Digital Normal';
+    font-style: normal;
+    font-weight: normal;
+    src: local('DS-Digital Normal'), url('DS-DIGI.woff') format('woff');
+    }
         .Calculator-body{
         height: 500px;
         width: 350px;
@@ -15,30 +21,44 @@
         .screen{
             background-color: #a1af77;
             text-align: right;
-            font-size: 30px;
+            font-size: 35px;
             width: 300px;
             height: 50px;
             display: block;
             margin: 0 auto;
             padding: 5px 10px;
             margin-bottom: 40px;
+            font-family: 'DS-Digital Normal';
         }
         .btn{
           height:60px;
-          width: 50px;
+          width: 65px;
           text-align: center;
           padding-bottom: 2px 0;
           font-size: 23px;
           margin: 4px;
-          border-radius:3px;
+          border-radius:7px;
+          cursor: pointer;
+        }
+        .btn:hover{
+            box-shadow: 0 0 5px 0 wheat;
+            transition: 0.5s;
         }
         .btn-container{
-         height: 400px;
+         height: 380px;
          display: flex;
          flex-direction: column; 
          flex-wrap: wrap;  
          align-items: center;
         }
+        .btn1{
+            background-color: red;
+            height: 120px;
+        }
+        .btn1:hover{
+            background-color:ivory;
+        }
+       
     </style>
 </head>
 <body>
@@ -66,7 +86,7 @@
             <button  class="btn">*</button>
             <button  class="btn">-</button>
             <button  class="btn">+</button>
-            <button  class="btn">=</button>
+            <button  class="btn btn1" >=</button>
             
          </div>
     </div>
